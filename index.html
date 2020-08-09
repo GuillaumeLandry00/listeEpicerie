@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Liste de course Jquery</title>
+  <style>
+    .selected {
+      color: rgb(202, 12, 202);
+      font-weight: bold;
+      background-color: limegreen;
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 2px;
+
+    }
+
+    li {
+      background-color: cornflowerblue;
+      padding: 20px;
+      width: 100px;
+      margin: 10px;
+      white-space: normal;
+      display: flex;
+    }
+
+    li:hover {
+      transition-property: all;
+      transition-duration: 300ms;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Liste de course Jquery</h1>
+    <input type="text" id="item" placeholder="Veuillez entrer un item" />
+    <!-- Permet de recevoir les items de la liste -->
+    <ul id="container"></ul>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script/main.js"></script>
+</body>
+
+</html>
